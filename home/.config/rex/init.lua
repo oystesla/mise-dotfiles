@@ -1,6 +1,4 @@
 -- tmux (~/.tmux.conf)
-rex.bind("ctrl+space>-", "pane.split", { direction = "down" })
-rex.bind("ctrl+space>r", "client.config.reload")
 rex.bind("ctrl+space>h", "pane.focus", { direction = "left" })
 rex.bind("ctrl+space>j", "pane.focus", { direction = "down" })
 rex.bind("ctrl+space>k", "pane.focus", { direction = "up" })
