@@ -7,7 +7,7 @@ builtin = "history-watch"
 [tools]
 
 [dotfiles]
-"~/.config/fish/config.fish" = {}
+"~/.config/fish/config.fish" = { mode = 'track'}
 "~/.config/karabiner/karabiner.json" = {}
 "~/.config/mise" = { mode = "track" }
 "~/.config/wezterm/wezterm.lua" = {}
