@@ -1,0 +1,1 @@
+/Users/ibz/.dotfiles/.config/fish/config.fish
