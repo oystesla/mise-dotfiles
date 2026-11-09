@@ -7,11 +7,7 @@ builtin = "history-watch"
 [tools]
 
 [dotfiles]
-"~/.config/fish/config.fish" = {}
-"~/.config/karabiner/karabiner.json" = {}
 "~/.config/mise" = { mode = "track" }
-"~/.config/wezterm/wezterm.lua" = {}
-"~/.tmux.conf" = {}
 
 [settings.skills]
 dir = ".agents/skills"
