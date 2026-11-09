@@ -7,3 +7,9 @@ builtin = "history-watch"
 [dotfiles]
 "~/.config/fish/config.fish" = { mode = "track" }
 "~/.config/mise" = { mode = "track" }
+
+[bootstrap.packages]
+"brew:wget" = "latest"
+"brew:anomalyco/tap/opencode-v2" = "latest"
+"brew-cask:wezterm" = "latest"
+"brew-cask:d12frosted/emacs-plus/emacs-plus-app" = "latest"
