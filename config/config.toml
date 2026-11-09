@@ -1,0 +1,6 @@
+[bootstrap.services.mise-history]
+builtin = "history-watch"
+
+[dotfiles]
+"~/.config/fish/config.fish" = { mode = "track" }
+"~/.config/mise" = { mode = "track" }
