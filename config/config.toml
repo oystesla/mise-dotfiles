@@ -1,0 +1,19 @@
+[bootstrap.mise_shell_activate]
+fish = "auto"
+
+[bootstrap.services.mise-history]
+builtin = "history-watch"
+
+[tools]
+
+[dotfiles]
+"~/.config/fish/config.fish" = {}
+"~/.config/karabiner/karabiner.json" = {}
+"~/.config/mise" = { mode = "track" }
+"~/.config/wezterm/wezterm.lua" = {}
+"~/.tmux.conf" = {}
+
+[settings.skills]
+dir = ".agents/skills"
+auto_sync = true # mise syncs after mise install, after mise use changes a version, and after mise upgrade
+prune = true
