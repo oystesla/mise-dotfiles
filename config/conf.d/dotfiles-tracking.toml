@@ -1,4 +1,0 @@
-[dotfiles]
-"~/.config/fish/config.fish" = { mode = "track" }
-"~/.config/wezterm/wezterm.lua" = { mode = "track" }
-"~/.tmux.conf" = { mode = "track" }
