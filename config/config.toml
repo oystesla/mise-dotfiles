@@ -7,6 +7,7 @@ builtin = "history-watch"
 [dotfiles]
 "~/.config/fish/config.fish" = { mode = "track" }
 "~/.config/mise" = { mode = "track" }
+"~/.config/rex/init.lua" = { mode = "track" }
 
 [bootstrap.packages]
 "brew:wget" = "latest"
