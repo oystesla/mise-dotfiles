@@ -47,4 +47,4 @@ builtin = "history-watch"
 "brew-cask:nikitabobko/tap/aerospace" = "latest"
 
 [settings]
-trusted-config-paths = ["/Applications"]
+trusted_config_paths = ["/Applications"]
