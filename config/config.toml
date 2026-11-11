@@ -12,6 +12,7 @@ builtin = "history-watch"
 [bootstrap.packages]
 "brew:wget" = "latest"
 "brew:anomalyco/tap/opencode-v2" = "latest"
+"brew-cask:anomalyco/tap/opencode-desktop" = "latest"
 "brew-cask:wezterm" = "latest"
 #"brew-cask:d12frosted/emacs-plus/emacs-plus-app" = "latest"
 "brew:awscli" = "latest"
