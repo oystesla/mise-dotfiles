@@ -45,3 +45,6 @@ builtin = "history-watch"
 "brew:hf" = "latest"
 "brew-cask:bruno" = "latest"
 "brew-cask:nikitabobko/tap/aerospace" = "latest"
+
+[settings]
+trusted-config-paths = ["/Applications"]
