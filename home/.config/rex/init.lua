@@ -23,4 +23,3 @@ rex.action{
   end,
 }
 
-rex.bind("alt+cmd+b", "new_branch")
