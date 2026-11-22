@@ -8,7 +8,7 @@ rex.action{
   name  = "new_branch",
   title = "Git: New Branch…",
   run   = function(ctx, args)
-      local name, why = rex.ui.input{ title = "Your name" }
+      local choice = rex.ui.pick{ title = "Pick a fruit", items = { "Apple", "Banana", "Cherry" } }
   end,
 }
 
