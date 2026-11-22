@@ -5,15 +5,22 @@ rex.bind("ctrl+space>k", "pane.focus", { direction = "up" })
 rex.bind("ctrl+space>l", "pane.focus", { direction = "right" })
 
 rex.action{
-  name  = "scratch",
-  title = "Open Scratch Window",
+  name  = "new_branch",
+  title = "Git: New Branch…",
   run   = function(ctx, args)
-    rex.session.new_window{
-      layout = rex.layout.block{
-        flavor = "com.superlogical.terminal.shell",
-      },
+    local name, why = rex.ui.input{
+      title       = "New branch",
+      placeholder = "feature/…",
+      value       = "feature/",
+      confirm     = "Create branch",
     }
+    if name == nil then return end
+
+    -- Type the command at the focused terminal's prompt.
+    rex.block.call("com.superlogical.terminal", "write", {
+      data = "git switch -c " .. name .. "\r",
+    })
   end,
 }
 
---rex.bind("shift+cmd+n", "scratch")
+rex.bind("alt+cmd+b", "new_branch")
