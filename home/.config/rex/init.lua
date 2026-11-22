@@ -22,4 +22,3 @@ rex.action{
     })
   end,
 }
-rex.bind("alt+cmd+b", "open_workspace")
