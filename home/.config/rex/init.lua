@@ -8,8 +8,18 @@ rex.action{
   name  = "new_branch",
   title = "Git: New Branch…",
   run   = function(ctx, args)
-      local choice = rex.ui.pick{ title = "Pick a fruit", items = { "Apple", "Banana", "Cherry" } }
+    local name, why = rex.ui.input{
+      title       = "New branch",
+      placeholder = "feature/…",
+      value       = "feature/",
+      confirm     = "Create branch",
+    }
+    if name == nil then return end
+
+    -- Type the command at the focused terminal's prompt.
+    rex.block.call("com.superlogical.terminal", "write", {
+      data = "git switch -c " .. name .. "\r",
+    })
   end,
 }
-
 rex.bind("alt+cmd+b", "new_branch")
