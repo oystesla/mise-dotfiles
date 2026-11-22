@@ -16,4 +16,4 @@ rex.action{
   end,
 }
 
-rex.bind("shift+cmd+n", "scratch")
+#rex.bind("shift+cmd+n", "scratch")
