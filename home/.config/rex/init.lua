@@ -22,4 +22,4 @@ rex.action{
     })
   end,
 }
-rex.bind("alt+cmd+b", "new_branch")
+rex.bind("alt+cmd+b", "open_workspace")
