@@ -6,7 +6,7 @@ rex.bind("ctrl+space>l", "pane.focus", { direction = "right" })
 
 rex.action{
   name  = "open_workspace",
-  title = "Workspace: New Incident",
+  title = "Workspace: Open",
   run   = function(ctx, args)
     local name, why = rex.ui.input{
       title       = "New branch",
